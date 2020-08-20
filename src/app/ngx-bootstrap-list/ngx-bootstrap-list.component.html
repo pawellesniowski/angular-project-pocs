@@ -1,0 +1,45 @@
+
+<div class="page-container">
+
+  <div class="row">
+    <div class="col-xs-12 col-12">
+      <div class="table-container">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th class="table-title">Reports</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Summary</th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr class="content-item content-row" *ngFor="let rowData of returnedArray">
+            <td class="content-cell" *ngFor="let cellData of rowData">
+              {{cellData}}
+            </td>
+          </tr>
+          <tbody>
+        </table>
+
+        <div class="pagination-container">
+          <pagination class="custom-pagination" [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)" itemsPerPage="5"></pagination>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+

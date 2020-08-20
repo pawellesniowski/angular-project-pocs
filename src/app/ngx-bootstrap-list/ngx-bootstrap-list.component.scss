@@ -1,0 +1,44 @@
+.page-container {
+  padding: 30px;
+  background-color: #f6f6f6;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  background-color: #ffffff;
+  padding: 0;
+  max-width: 1200px;
+  border: 1px solid #dee2e6;
+}
+
+table {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+}
+
+.table-title {
+  font-size: 1.15rem;
+}
+
+.table td:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table thead th {
+  border-bottom: 1px;
+}
